@@ -1,0 +1,10 @@
+body{
+	background-color:grey;
+}
+.log_panel{
+	margin-top:150px;
+	background-color:white;
+	width:300px;
+	border-radius:5px;
+}
+
