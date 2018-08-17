@@ -1,0 +1,1270 @@
+/*fonts in site*/
+@font-face {
+ font-family:'Raleway Medium';
+ src:url(../fonts/Raleway-Medium.ttf);
+ font-weight:normal;
+ font-style:normal;
+}
+
+@font-face {
+ font-family:'Raleway-SemiBold';
+ src:url(../fonts/Raleway-SemiBold.ttf);
+ font-weight:normal;
+ font-style:normal;
+}
+@font-face {
+ font-family:'Raleway-Bold';
+ src:url(../fonts/Raleway-Bold.ttf);
+ font-weight:normal;
+ font-style:normal;
+}
+@font-face {
+ font-family:'Roboto-Light';
+ src:url(../fonts/Roboto-Light.ttf);
+ font-weight:normal;
+ font-style:normal;
+}
+@font-face {
+ font-family:'Roboto-Medium';
+ src:url(../fonts/Roboto-Medium.ttf);
+ font-weight:normal;
+ font-style:normal;
+}
+@font-face {
+ font-family:'Roboto';
+ src:url(../fonts/Roboto-Regular.ttf);
+ font-weight:normal;
+ font-style:normal;
+}
+
+/*+++++++++++++++++++custom editing in bootstrap++++++++++++++*/
+body {
+    overflow-x: hidden;
+    font-family: "Raleway Medium";
+	color:#a5a5a4;
+}
+
+.text-black {
+    color: #222;
+}
+.text-muted
+{
+	color:#ccc;	
+}
+.text-yellow {
+    color: #fed136;
+}
+.text-blue
+{
+	color:#093359;	
+}
+.text-danger
+{
+	color:#ff6c60;
+}
+.text-grey
+{
+	color:#7c7c7c;	
+}
+.text-white {
+    color: #ffffff;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 18px;
+}
+p.lead {
+    font-size: 30px;
+}
+.notvisible 
+{
+    visibility:hidden;
+}
+.visible
+{
+    visibility:visible;
+}
+
+a {
+    color: #ffa726;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #000000;
+	outline:none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+    font-family:'Raleway-Bold';
+}
+h1
+{
+ 	font-size:41px;	
+}
+.form-control
+{
+	border-radius:2px;
+	height:40px;	
+}
+.img-centered {
+    margin: 0 auto;
+}
+.btn
+{
+	font-family:"Raleway-SemiBold";	
+	transition:all 0.4s ease-in-out;
+	border-radius:1px;
+	overflow:hidden;
+    position: relative;
+    z-index: 1;	
+}
+
+.btn-primary {
+    border-color: #fff;
+    color: #fff;
+    background-color: #ffa726;
+	
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #fff;
+    color: #ffa726;
+    background-color: transparent;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-default {
+    background-image: none;
+}
+.btn-default {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+	
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+    border-color: #58585a;
+    color: #fff;
+    background-color: #58585a;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+    background-image: none;
+}ff6c60
+.btn-blue {
+    border-color: #093359;
+    color: #fff;
+    background-color:#093359;
+	
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active,
+.open .dropdown-toggle.btn-blue {
+    border-color: #ffffff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-blue:active,
+.btn-blue.active {
+    background-image: none;
+	outline:none;
+}
+.btn-danger {
+    border-color: #ff6c60;
+    color: #fff;
+    background-color:#ff6c60;
+	
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+    border-color: #ff6c60;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-danger:active,
+.btn-danger.active {
+    background-image: none;
+	outline:none;
+}
+
+.btn:hover::before {
+    background-color: #000;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.btn::before {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0;
+    left: -10px;
+    position: absolute;
+    right: -10px;
+    top: inherit;
+    transition: all 0.5s ease 0s;
+    width: auto;
+    z-index: -1;
+}
+/*Custom styling end*/
+
+/*++++++++++++navbar start+++++++++++++++++++*/
+.index .navbar-default {
+    border-color: transparent;
+    background-color: rgba(0,0,0,.2);
+	/*padding:0;*/
+}
+.other .navbar-default {
+    border-color: transparent;
+    background-color: #093359;
+	padding:15px 0;
+	margin:0;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Raleway-Medium";
+    color: #f96711;
+	height:auto;
+	padding:0;
+}
+.navbar-default .navbar-brand > img{
+    max-width:110px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #f96711;
+}
+
+.navbar-default .nav > li {
+    position:relative;
+    padding-top:28px;
+-webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+}
+.navbar-default .nav > li:first-child {
+   
+    padding-top:32px;
+
+}
+.navbar-default .nav li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+	font-size:15px;
+    color: #ffffff;
+	padding:10px;
+}
+.navbar-default .nav li a.btn {
+    padding:6px 10px;
+	margin:0 10px;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #fff;
+}
+.navbar-nav > li > .dropdown-menu
+{
+	 background-color: rgba(0,0,0,.4);
+	 padding:10px;
+	 width:200px;
+}
+.navbar-nav > li > .dropdown-menu a
+{
+	border-bottom:1px solid #fff;	
+}
+.navbar-nav > li > .dropdown-menu a:active,
+.navbar-nav > li > .dropdown-menu a:focus,
+.navbar-nav > li > .dropdown-menu a:hover
+{
+	background-color:rgba(0,0,0,0.2);
+	outline:none;	
+}
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #7b0600;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #b30a01;
+}
+
+
+@media(min-width:768px) {
+
+ .navbar-default {
+        padding: 6px 0;
+        border: 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .index .navbar-default {
+        
+        background-color: rgba(0,0,0,.2);
+    }
+.other .navbar-default {
+        
+        background-color: #093359;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 42px;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .index .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: rgba(0,0,0,.7);
+    }
+	.other .navbar-default.navbar-shrink {
+        padding: 10px 0;
+    }
+      .navbar-default.navbar-shrink .nav > li {
+    position:relative;
+    padding-top:0;
+-webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+}
+.navbar-default.navbar-shrink .nav > li:first-child {
+   -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    padding-top:5px;
+}
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 30px;
+    }
+	  .navbar-default.navbar-shrink .navbar-brand > img{
+    max-width:50px;
+}
+
+}
+/*navbar end*/
+
+section {
+    padding: 40px 0;
+}
+span.line
+{
+	display:block;
+	width:200px;
+	height:3px;
+	background-color:#ffa726;
+	content:"";
+	margin:30px auto 50px;
+}
+.carousel-caption
+{
+	text-align:left;
+	bottom:125px;	
+	left:15%;
+}
+.carousel-control.left,.carousel-control.right
+{
+	background-image:none;	
+}
+.carousel-caption h1
+{
+	font-size:45px;	
+	   font-family: "Raleway Medium";
+	   font-weight:100;
+}
+/*--------------------------------------------------
+      			Form style
+----------------------------------------------------*/
+#form
+{
+	background-image:url(../images/banner_03.png);
+	background-color:#093359;
+	background-size: cover;
+	
+}
+#form .tab-pane {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+#form ul.nav-tabs{
+    display:table;
+	margin:0 auto;
+}
+
+#form ul.nav-tabs li > a {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 0 10px;
+    text-align: center;
+    width: 350px;
+}
+#form ul.nav-tabs li.active > a {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #fff;
+    color: #fff;
+}
+.form-control-feedback.fa {
+    font-size: 21px;
+    margin-top: 9px;
+}
+.truckGuidePicture .img-responsive.img-centered {
+    max-width: 300px;
+    height: 200px;
+    width: auto;
+}
+.truckGuidePicture {
+   margin-bottom:20px;
+}
+/*--------------------------------------------------
+      			Why Us style
+----------------------------------------------------*/
+#faq
+{
+	background:#ffa726;
+	padding-bottom:0;
+	border-bottom:2px solid #000;
+}
+#faq span.line
+{
+	background-color:#fff;
+}
+
+#faq p
+{
+	margin:20px 0;	
+}
+#faq figure {
+    background-color: #444545;
+    border-radius: 50%;
+    display: table;
+    height: 95px;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100px;
+}
+#faq figure img{height:55px;}
+
+.moving_truck
+{
+	position:relative;
+	height:261px;
+	display:table;
+	width:100%;
+}
+#faq div.row > div.wow
+{
+	min-height:391px;	
+}
+.moving_truck > div
+{
+	display:table-cell;
+	vertical-align:bottom;
+	float:none;
+	width:100%;
+}
+span.build
+{
+	background-image:url(../images/banner_05_03.png);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	bottom:0;
+	right:0;
+ -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+span.truck1
+{
+	background-image: url("../images/final-(2)_03.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    display: block;
+    height: 87px;
+    position: absolute;
+	bottom:0;
+    width: 162px;
+	opacity:0;
+
+	
+}
+span.truck2
+{
+	background-image: url("../images/final-(2)_05.png");
+   background-position: left;
+    background-repeat: no-repeat;
+    display: block;
+    height: 87px;
+    position: absolute;
+	bottom:0;
+    width: 162px;
+    opacity:1;
+	
+}
+
+/*why us end*/
+
+/*--------------------------------------------------
+      			How it work style
+----------------------------------------------------*/
+#work .carousel-control .glyphicon-chevron-left,#work .carousel-control .glyphicon-chevron-right {
+    font-size: 69px;
+    height: 60px;
+    margin-top: -15px;
+    width: 30px;
+    color: #ccc;
+}
+#work .carousel-control .glyphicon-chevron-left
+{
+	left:0;	
+}
+#work .carousel-control .glyphicon-chevron-right
+{
+	right:0;	
+}
+/*--------------------------------------------------
+      			Contact style
+----------------------------------------------------*/
+section#contact {
+    background-image: url(../images/banner_08.png);
+    background-position: center;
+    background-repeat: no-repeat;
+	padding:100px 0;
+}
+section#contact span.line
+{
+	margin:20px 0 0 80px;
+	width:100px;
+}
+.feedback-wrap
+{
+	position:fixed;
+	right:50px;
+	bottom:0;	
+	width:300px;
+	background-color:#e0e0e0;
+	z-index:999999;
+}
+.feedback-wrap .feedback-header
+{
+	background-color:rgba(0,0,0,0.8);
+	padding:10px;
+	font-size:18px;
+	color:#fff;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+.feedback-wrap .feedback-body
+{
+	
+	padding:20px;
+	font-size:14px;
+}
+
+/*contact end*/
+/*--------------------------------------------------
+      			Footer style
+----------------------------------------------------*/
+footer {
+    padding: 15px 0;
+	background-color:#ffa726;
+}
+footer a {
+   
+	color:#fff;
+}
+footer .nav > li > a {
+	color: #ffffff;
+	font-size: 15px;
+	padding:0px 0px;
+	font-weight:400;
+}
+footer .nav > li > a:hover {
+	color: #000;
+	text-decoration:blink;
+	background-color:transparent;
+}
+.copyright
+{
+    padding:10px;
+	background-color:#ffa726;
+	color:#fff;
+	text-align:center;
+	font-size:13px;	
+}
+.copyright a
+{
+	color:#fff;
+}
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+@media (min-width:768px)
+{
+	ul.social-buttons li
+	{
+		float:right;
+	}
+}
+/*footer end*/
+/*==========================================================================
+*					DATEPICKER STYLE
+*===========================================================================*/
+
+.datepicker {
+	font: 15px/1.5 "Arial";
+	font-weight: 300;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+		-webkit-border-radius: 3px;  
+		-moz-border-radius: 3px;
+	box-shadow: 0.5px 0.5px 0px #c8c8c8;
+		-webkit-box-shadow: 0.5px 0.5px 3px #eeeeee;
+		-moz-box-shadow: 0.5px 0.5px 3px #eeeeee;
+}
+
+/*
+ * datepicker_header
+*/
+
+.datepicker > .datepicker_header{
+	padding:8px 5px;
+	background-color:	#093359;
+	color: #ffffff;
+	text-align: center;
+	font-size: 9pt;
+	user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+}
+
+.datepicker > .datepicker_header > a {
+	user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+	cursor: pointer;
+	color: #F7BC28;
+	font-weight:bold;
+	font-size:20px;
+	font-family:"Raleway-Bold";
+	padding:0 5px;
+	display:inline-block;
+}
+
+.datepicker > .datepicker_header > a:hover {
+	color: #ffffff;
+	background-color:	#c8c8c8;
+	text-decoration:none;
+}
+
+.datepicker > .datepicker_header > a:active {
+	color: #ffffff;
+	background-color:	#808080;
+}
+
+.datepicker > .datepicker_header > span {
+	margin-left: 20px;
+	margin-right: 20px;
+	user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+}
+
+.datepicker > .datepicker_header > .icon-home {
+	position:	absolute;
+	display:		block;
+	float:		left;
+	margin-top:	2px;
+	margin-left:	5px;
+	width:		11pt;
+	height:		11pt;
+	vertical-align: middle;
+}
+
+.datepicker > .datepicker_header > .icon-home > svg > g > path {
+	fill: #3b7796;
+}
+
+.datepicker > .datepicker_header > a:hover > svg > g > path {
+	fill: #303030; /* Icon button hover color */
+}
+
+
+/*
+ * datepicker_inner_container 
+*/
+
+.datepicker > .datepicker_inner_container {
+	margin: -2px 0px -2px 0px;
+	background-color: #d2d2d2;
+	border: 1px solid #c8c8c8;
+	border-radius: 3px;
+		-webkit-border-radius: 3px;  
+		-moz-border-radius: 3px;
+
+	box-shadow: 0.5px 0px 3px #c8c8c8;
+		-webkit-box-shadow: 0.5px 0px 3px #c8c8c8;
+		-moz-box-shadow: 0.5px 0px 3px #c8c8c8;
+}
+
+.datepicker > .datepicker_inner_container:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*
+ * datepicker_inner_container > datepicker_calendar
+*/
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar {
+	float: left;
+	width: auto;
+	
+	margin-top: -0.5px;
+	margin-left: -1px;
+	margin-bottom: -2px;
+	
+	background-color:	#ffffff;
+	border: 1px solid #c8c8c8;
+	
+	border-top:none;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+		-webkit-border-top-left-radius:	3px;
+		-webkit-border-bottom-left-radius: 3px;
+		-moz-border-radius-topleft:		3px;
+		-moz-border-radius-bottomleft:	3px;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > table {
+    padding: 10px;
+}
+
+/*
+ * datepicker_inner_container > datepicker_calendar > datepicker_table > tbody > tr > th (WDay-cell)
+*/
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > th {
+	color:	#646464;
+	width: 18px;
+	font-size: small;
+	font-weight: normal;
+	text-align:center;
+}
+
+/*
+ * datepicker_inner_container > datepicker_calendar > datepicker_table > tbody > tr > td (Day-cell)
+*/
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td {
+	color:	#000000;
+	font-size: small;
+	text-align:center;
+	padding:10px;
+	user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+	cursor: pointer;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.today {
+	background-color:#f0f0f0;
+        border-radius:2px;
+        color:#000;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.wday_sat {
+	color:	#0044aa;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.wday_sun {
+	color:	#e13b00;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_another_month {
+	color:	#cccccc;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_in_past {
+	cursor: default;
+	color: #cccccc;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_in_unallowed {
+	cursor: default;
+	color: #cccccc;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.out_of_range {
+	cursor: default;
+	color: #cccccc;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.active {
+	background-color: #F7BC28;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.hover {
+	color: #ffffff;
+	background-color:	#222222;
+  border-radius: 2px;
+}
+
+/*
+ * datepicker_inner_container > datepicker_timelist
+*/
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist {
+	float: left;
+	width: 4.2em;
+	height: 118px;
+	
+	margin-top: -0.5px;
+	padding: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+	overflow: auto;
+	overflow-x: hidden; 
+	
+	background-color:	#ffffff;
+	
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-border-top-right-radius:	3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright:		3px;
+	-moz-border-radius-bottomright:	3px;
+}
+
+/*
+.datepicker > .datepicker_inner_container > .datepicker_timelist::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+*/
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar {
+	overflow: hidden;
+	width: 6px;
+	background: #fafafa;
+	
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-border-top-right-radius:	3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright:		3px;
+	-moz-border-radius-bottomright:	3px;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar:horizontal {
+	height: 1px;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-button {
+	display: none;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-piece {
+	background: #eee;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-piece:start {
+	background: #eee;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-thumb {
+	background: #aaaaaa;
+	border-radius: 3px;
+		-webkit-border-radius: 3px;  
+		-moz-border-radius: 3px;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist::-webkit-scrollbar-corner {
+	background: #333;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item {
+	padding-top:   1px;
+	padding-bottom:1px;
+	padding-left:  7px;
+	padding-right: 25px;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	font-size: small;
+	color:#222;
+	user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+	cursor: pointer;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.time_in_past {
+	cursor: default;
+	color: #cccccc;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.out_of_range {
+	cursor: default;
+	color: #cccccc;
+}
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.active {
+	color: #ffffff;
+	background-color:	#222;
+}
+
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item.hover {
+	color: #000000;
+	background-color:	#c8c8c8;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > th
+{
+ 	width:30px;	
+}
+.datepicker > .datepicker_header
+{
+	font-size:16px;	
+}
+
+/*==========================================================================================
+									OTHER PAGES HEADER
+*===========================================================================================*/
+.login-wrap
+{
+	position:absolute;
+	top:100%;
+	right:0;
+	width:280px;
+	color:#999;	
+}
+.navbar-default .nav li .login-wrap label
+{
+	font-size:14px;	
+	font-weight:lighter;
+}
+.navbar-default .nav li .login-wrap .form-group
+{
+	margin-bottom:7px;
+}
+.navbar-default .nav li .login-wrap input.form-control
+{
+	border-color:#e9e9e9;
+	border-radius:5px;
+	height:34px;
+}
+.navbar-default .nav li .login-wrap a
+{
+	color:#999;
+	font-size:12px;	
+}
+/*--------------------------------------------------
+      			Register form style
+----------------------------------------------------*/
+.content-area
+{
+	font-family:"Roboto";	
+}
+.content-area h1,.content-area h2,.content-area h3,.content-area h4,.content-area h5,.content-area h6
+{
+	font-family:"Roboto-Medium";	
+}
+.content-area .main-heading
+{
+	font-size:40px;
+}
+.padd15
+{
+	padding:15px;	
+}
+.register_form .form-section
+{
+	margin-bottom:20px;
+}
+.register_form .form-section_head
+{
+	color:#ff6c60;
+	font-size:30px;
+	margin:15px;
+	padding-bottom:20px;
+	border-bottom:1px solid #999;
+}
+.register_form label
+{
+	/*font-weight:lighter;*/
+	font-size:14px;
+}
+.register_form .form-control
+{
+	border:1px solid #ccc;
+	border-radius:2px;
+}
+#blah
+{
+	float:left;
+	width:61px;
+	height:auto;
+	max-height:80px;
+	border:3px solid #ccc;
+	border-radius:8px;
+	margin-right:10px;
+}
+/*--------------------------------------------------
+      			Profile page style
+----------------------------------------------------*/
+.profile-area
+{
+	padding:0;
+	margin:0;	
+}
+.profile-area .sidebar
+{
+	background-color:#ebebeb;
+	padding:0;
+}
+.profile-area .sidebar .user-info
+{
+	display:table;
+	width:100%;
+	background-color:#ffa726;
+	color:#fff;
+	height:100px;
+	padding:10px 20px;
+}
+.profile-area .sidebar .user-info > div
+{
+	display:table-cell;
+	vertical-align:middle;
+}
+.profile-area .sidebar .user-info > div p
+{
+	margin:0
+}
+.profile-area .sidebar .user-info > div.user-img
+{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	background-color:#fff;
+	overflow:hidden;
+	text-align:center;
+}
+.profile-area .sidebar .user-info > div.user-img > img
+{
+	width:60px;
+	height:auto;
+	margin:0 auto;
+	vertical-align:middle;
+}
+
+
+/*--------------------------------------------------
+      			Profile page style
+----------------------------------------------------*/
+.profile-area
+{
+	padding:0;
+	margin:0;	
+}
+/* profile sidebar style */
+.profile-area .sidebar
+{
+	background-color:#ebebeb;
+	padding:0;
+	min-height:800px;
+}
+.profile-area .sidebar .user-info
+{
+	display:table;
+	width:100%;
+	background-color:#ffa726;
+	color:#fff;
+	height:100px;
+	padding:10px 20px;
+	border-spacing:10px 0;
+}
+.profile-area .sidebar .user-info > div
+{
+	display:table-cell;
+	vertical-align:middle;
+}
+.profile-area .sidebar .user-info > div p
+{
+	margin:0
+}
+.profile-area .sidebar .user-info > div.user-img
+{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	background-color:#fff;
+	overflow:hidden;
+	text-align:center;
+}
+.profile-area .sidebar .user-info > div.user-img > img
+{
+	width:60px;
+	height:auto;
+	margin:0 auto;
+	vertical-align:middle;
+}
+.profile-area .sidebar .list-navigation ul li a
+{
+	font-family:"Roboto-Light";
+	font-size:18px;
+	color:#222;
+	line-height:30px;
+	padding:8px 10px 8px 40px;	
+}
+.profile-area .sidebar .list-navigation ul li a:hover,
+.profile-area .sidebar .list-navigation ul li a:focus,
+.profile-area .sidebar .list-navigation ul li a:active
+{
+	background-color:#fff;	
+}
+.profile-area .sidebar .list-navigation ul li.active a
+{
+	background-color:#bcbcbc;
+	color:#fff;	
+}
+/* profile main content style */
+.profile-area .main-content
+{
+	padding:0;
+	background-color:#fff;
+	min-height:800px;
+}
+.profile-area .main-content .content-title
+{
+	width:100%;
+	background-color:#ebebeb;
+	color:#bcbcbc;
+	height:100px;
+	padding:20px 50px;
+	vertical-align:middle;
+	font-family:"Roboto-Light";
+	font-size:48px;
+}
+.padding4020
+{
+	padding:20px 70px;	
+}
+.profile-area .main-content h3.tab-heading {
+    color: #7c7c7c;
+    font-family: "Roboto-Light";
+    font-size: 30px;
+    margin: 0 0 20px 0;
+	text-align:center;
+}
+.profile-area .main-content .tab-pane {
+    border: 1px solid #ddd;
+    padding: 50px;
+	text-align:left;
+}
+.profile-area .main-content .nav.nav-tabs.nav-tabs-justified li.active a {
+    background-color: #093359;
+    color: #fff;
+}
+.profile-area .main-content .nav.nav-tabs.nav-tabs-justified a {
+    background-color: #ff6c60;
+    border-radius: 11px 11px 0 0;
+    color: #fff;
+    margin: 0 14px 0 0;
+}
+
+.profile-area .main-content .bordered-pannel {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ccc;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 2px;
+    box-shadow: 2px 0 2px #ccc;
+    padding: 20px;
+}
+.profile-area .main-content .list-projects {
+    padding:0;
+	margin:0;
+}
+.profile-area .main-content .list-projects > li {
+    border-top: 1px solid #ccc;
+    list-style: outside none none;
+    padding: 10px;
+	line-height:30px;
+}
+.profile-area .main-content .list-projects > li > label.label-info {
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+    font-weight: lighter;
+    padding: 0 12px;
+    width: 100px;
+	text-align:center;
+	background-color:#84cfe5;
+}
