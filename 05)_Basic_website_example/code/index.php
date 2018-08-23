@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -52,7 +52,7 @@
                         <a class="btn btn-default" href="register-company.php" name = "register">Register</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="javascript:void(0);" data-toggle="dropdown" role="button" aria-haspopup="true"><i class="fa fa-navicon fa-2x"></i></a>
+                        <a class="page-scroll" href="javascript:void(0);" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-navicon fa-2x"></i></a>
                          <ul class="dropdown-menu" aria-labelledby="dLabel">
                          		<li><a href="#">Why Us</a></li>
                                 <li><a href="#">Why Us</a></li>

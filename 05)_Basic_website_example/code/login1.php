@@ -43,7 +43,7 @@ if(isset($_POST['login'])){
 		$_SESSION['profile_img']=$row['profile_pic'];
 		
 				
-		header("location: profile-page.php"); 	
+		 	
 
 }
 	
@@ -88,7 +88,7 @@ if(isset($_POST['login'])){
                         <a class="btn btn-default" href="register-company.php">Register</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="javascript:void(0);" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-navicon fa-2x"></i></a>
+                        <a class="page-scroll" href="javascript:void(0);" data-toggle="dropdown" role="button" aria-haspopup="true"><i class="fa fa-navicon fa-2x"></i></a>
                          <ul class="dropdown-menu" aria-labelledby="dLabel">
                          		<li><a href="#">Why Us</a></li>
                                 <li><a href="#">Why Us</a></li>
@@ -138,7 +138,7 @@ if(isset($_POST['login'])){
          
 		<div class="container">
                             
-			<form method = "post" >
+			<form method = "post" action = "profile-page.php" >
 			  <div class="form-group">
 				<label for="email">Email address:</label>
 			   <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email">
@@ -148,6 +148,7 @@ if(isset($_POST['login'])){
 				<input type="password" class="form-control" id="pwd" name = "pwd">
 			  </div>
 			  <div class="checkbox">
+			  <?php echo $_SESSION['username'];?>
 				 <button type="submit" class="btn btn-danger" name = "login">Submit</button>
 				
 				</div>

@@ -138,13 +138,13 @@
                     <li>
                         <a class="btn btn-default" href="login.php">Login</a>
                     </li>
-					<li>
+                    <li>
                         <a class="btn btn-default" href="register-company.php">Register</a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" data-toggle="dropdown" role="button" aria-haspopup="true"><i class="fa fa-navicon fa-2x"></i></a>
                          <ul class="dropdown-menu">
-                         		<li><a href="#">Why Us</a></li>
+                         	<li><a href="#">Why Us</a></li>
                                 <li><a href="#">Why Us</a></li>
                                 <li><a href="#">Why Us</a></li>
                                 <li><a href="#">Why Us</a></li>
@@ -171,21 +171,21 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">Transport Name</label>
-                                <input type="text" name="transporter" value="" class="form-control nodigi" />
+                                <input type="text" name="transporter" value="" class="form-control nodigi" required/>
 								
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">Partner / Director Name</label>
-                                <input type="text" name="director" value="" class="form-control nodigi" />
+                                <input type="text" name="director" value="" class="form-control nodigi" required />
 								
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label">Mobile No.</label>
-                                <input type="tel" name="mobile" value="" class="form-control noalpha phone" />
+                                <input type="tel" name="mobile" value="" class="form-control noalpha phone" required/>
 								
 								
                             </div>
@@ -193,41 +193,41 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label" for="landline">Landline No.</label>
-                                <input type="tel" name="landline" value="" class="form-control noalpha phone" />
+                                <input type="tel" name="landline" value="" class="form-control noalpha phone" required/>
 								
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label" for="email">Email address:</label>
-                                 <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email">
+                                 <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email" required>
 								 
                             </div>
                         </div>
 						<div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label" for="otp">Enter OTP*</label>
-                                <input type="password" name="otp" value="" class="form-control" />
+                                <input type="password" name="otp" value="" class="form-control" required />
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label" for="year">Establishment Year</label>
-                                <input type="text" name="year" value="" class="form-control noalpha" />
+                                <input type="text" name="year" value="" class="form-control noalpha" required/>
 								
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label" for="name">Registered Address</label>
-                                <input type="text" name="address" value="" class="form-control" />
+                                <input type="text" name="address" value="" class="form-control" required />
 								
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label" for="name">Pin Code</label>
-                                <input type="text" name="pincode" value="" class="form-control noalpha pin" />
+                                <input type="text" name="pincode" value="" class="form-control noalpha pin" required />
                             </div>
                         </div>
                   </div>
@@ -239,14 +239,14 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label" for="auth">Person Auithorized To Manage Operations</label>
-                                <input type="text" name="auth_name" value="" class="form-control nodigi" />
+                                <input type="text" name="auth_name" value="" class="form-control nodigi" required />
 								
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="control-label" for="auth">Contact No. Of Person Authorized</label>
-                                <input type="text" name="auth_no" value="" class="form-control noalpha phone" />
+                                <input type="text" name="auth_no" value="" class="form-control noalpha phone" required/>
 								
                             </div>
                         </div>

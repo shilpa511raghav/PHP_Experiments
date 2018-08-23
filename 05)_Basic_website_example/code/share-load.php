@@ -56,7 +56,7 @@ session_start();
    		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 sidebar">
         	<div class="user-info">
             	<div class="user-img">
-                	<img src="http://localhost/cargo/images/<?php echo $_SESSION['profile_img'];?>" alt="username" />
+                	<img src="http://localhost/mycargo/images/<?php echo $_SESSION['profile_img'];?>" alt="username" />
                 </div>
                 <div class="user-data">
                 	<p><?php echo $_SESSION['username'];?></p>

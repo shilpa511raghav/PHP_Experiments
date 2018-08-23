@@ -63,7 +63,7 @@ if ($_SESSION['email']==False)
 	<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 sidebar">
 		<div class="user-info">
 			<div class="user-img">
-				<img src="http://localhost/cargo/images/<?php echo $_SESSION['profile_img'];?>" alt="username" />
+				<img src="http://localhost/practice_websites/carrymycargo/images/<?php echo $_SESSION['profile_img'];?>" alt="username" />
 			</div>
 			<div class="user-data">
 				<p><?php echo $_SESSION['username'];?></p>
@@ -82,7 +82,7 @@ if ($_SESSION['email']==False)
 					<li><a href="#">History</a></li>
 					<li class="active"><a href="in-transit.php">In Transit</a></li>
 					<li><a href="share-load.php">Share The Load</a></li>
-					<li><a href="logout.php">Logout</a></li>
+					<li><a href="#">Logout</a></li>
 
 				</ul>
 			</nav>

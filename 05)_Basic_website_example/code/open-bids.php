@@ -36,7 +36,7 @@ session_start();
                         <a class="btn btn-default" href="register-company.php">Register</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="javascript:void(0);" data-toggle="dropdown" role="button" aria-haspopup="true"><i class="fa fa-navicon fa-2x"></i></a>
+                        <a class="page-scroll" href="javascript:void(0);" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-navicon fa-2x"></i></a>
                          <ul class="dropdown-menu" aria-labelledby="dLabel">
                          		<li><a href="#">Why Us</a></li>
                                 <li><a href="#">Why Us</a></li>
@@ -58,7 +58,7 @@ session_start();
 	<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 sidebar">
 		<div class="user-info">
 			<div class="user-img">
-				<img src="http://localhost/cargo/images/<?php echo $_SESSION['profile_img'];?>" alt="username" />
+				<img src="http://localhost/mycargo/images/<?php echo $_SESSION['profile_img'];?>" alt="username" />
 			</div>
 			<div class="user-data">
 				<p><?php echo $_SESSION['username'];?></p>
@@ -77,7 +77,7 @@ session_start();
 					<li><a href="#">History</a></li>
 					<li><a href="in-transit.php">In Transit</a></li>
 					<li><a href="share-load.php">Share The Load</a></li>
-					<li><a href="logout.php">Logout</a></li>
+					<li><a href="#">Logout</a></li>
 
 				</ul>
 			</nav>
